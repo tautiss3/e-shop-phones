@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Page Title</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
+        <script src="main.js"></script>
+    </head>
+    <body>
+        <%- include('./_partials/navbar.ejs') %>
+        <form action="/create" method="POST">
+            <input type="text" placeholder="Product title" name="title"> <br>
+            <input type="text" placeholder="Product description" name="description"> <br>
+            <input type="text" placeholder="Price" name="price"> <br>
+            <input type="text" placeholder="Sizes, please separate with ," name="sizes"> <br>
+            <button type="submit">Submit</button>
+        </form>
+    </body>
+</html>

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Page Title</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" type="text/css" media="screen" href="../main.css" />
+        <script src="../main.js"></script>
+    </head>
+    <body>
+        <%- include("./_partials/navbar") %>
+
+        <a href="/"> Atgal </a>
+        <div class="product-details">
+            <div class="image" style="background-image: url( <%= product.imageURL %>)">
+
+            </div>
+            <div class="details">
+                <div class="title">
+                    <%= product.title %>
+                </div>
+                <div class="description">
+                    description: 
+                    <%= product.description %>
+                </div>
+                <div class="price">
+                    <%= product.price %> &euro;
+                </div>
+                <div class="colours">
+                    Sizes: <br>
+                    <% for(let i = 0; i < product.colours.length; i++){ %>
+                        <button class="size" id="<%= product.colours[i] %>">
+                            <%= product.colours[i] %>
+                        </button>
+                    <% } %>
+                </div>
+                <div class="actions">
+                    <button class="" onclick="addToCart(<%= JSON.stringify(product) %>)" type="button">Add to cart</button>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>

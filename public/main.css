@@ -1,0 +1,92 @@
+/* body {
+    background-image: url("https://i.pinimg.com/originals/9c/a7/eb/9ca7eba0a48a2ba26c83e5aa5bbdff8c.jpg");
+    background-size: 1700px 800px;
+    color: white;
+} */
+
+.product-list{
+    display: flex;
+    max-width: 1240px;
+    margin: 0 auto;
+}
+.product{
+    width: 25%;
+    margin: 10px;
+}
+.product .image{
+    background-size: 270px 270px;
+    width: 100%;
+    height: 270px;
+}
+.product .title{
+    font-size: 22px;
+}
+.navbar{
+    display: flex;
+    width: 100%;
+    height: 60px;
+    line-height: 60px;
+    border-bottom: 1px solid #ccc;
+    margin-bottom: 40px;
+}
+.logo{
+    display: inline-block;
+    font-size: 40px;
+}
+.spacer{
+    flex: 1 1 auto;
+}
+.cart{
+    display: inline-block;
+}
+
+.product-details{
+    max-width: 900px;
+    margin: 0 auto;
+    display: flex;   
+}
+.product-details .image{
+    background-size: 405px 430px;
+    width: 50%;
+    display: inline-block;
+    min-height: 430px;
+    background-color: #f2f2f2;
+}
+.product-details .title{
+    font-size: 40px;
+    padding: 10px;
+}
+.product-details .description, .product-details .actions, .product-details .colours{
+    padding: 10px;
+}
+.product-details .price{    
+    font-size: 40px;
+    padding: 10px;
+}
+.product-details .actions button{
+    width: 320px;
+    height: 40px;
+    font-size: 28px;
+}
+.product-details .colours button{
+    width: 50px;
+    height: 25px;
+    line-height: 20px;
+    background: #ccc;
+    border: none;
+    font-size: 15px;
+}
+
+.product-details .colours button.active{
+    background: #fff;
+    border: 2px solid #ccc;
+    box-sizing: border-box;
+}
+
+.cart-product{
+    display: flex;
+}
+.card-product div{
+    width: 30%;
+    display: inline-block;
+}

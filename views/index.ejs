@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Page Title</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
+        <script src="main.js"></script>
+    </head>
+    <body>
+        <%- include("./_partials/navbar") %>
+        <div class="product-list">
+            <% for(let i = 0; i < products.length; i++){ %>
+                <a href="product/<%= i %>" class="product">
+                    <div class="image" style="background-image: url( <%= products[i].imageURL %>)">
+                    
+                    </div>
+                    <div class="title">
+                        <%= products[i].title %>
+                    </div>
+                    <div class="price">
+                        <%= products[i].price %> &euro;
+                    </div>
+                </a>
+            <% } %>
+        </div>
+
+    </body>
+</html>
