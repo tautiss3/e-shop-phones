@@ -4,7 +4,7 @@ var fs = require("fs");
 var express = require('express');
 //issikvieciame funkcija is bibliotekos express();
 var app = express();
-var port = 3000;
+var port = 4000;
 
 //jas reikia iskoduoti is form body...
 var bodyParser = require('body-parser');
